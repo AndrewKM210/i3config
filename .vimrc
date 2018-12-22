@@ -29,10 +29,10 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'itchyny/lightline.vim'
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-eunuch'
+" Plugin 'junegunn/fzf'
+" Plugin 'junegunn/fzf.vim'
+" Plugin 'scrooloose/nerdtree'
+" Plugin 'tpope/vim-eunuch'
 
 
 " All of your Plugins must be added before the following line
@@ -50,9 +50,9 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+" Make syntax always on
+syntax on
+
+" Make colour of status bar appear
 set laststatus=2
 
-let g:NERDTreeDirArrowExpandable = '▸'
-let g:NERDTreeDirArrowCollapsible = '▾'
-
-nmap <ctrl+o> :NERDTreeToggle<CR>
