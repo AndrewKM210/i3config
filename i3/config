@@ -98,7 +98,7 @@ bindsym $mod+a focus parent
 set $ws1 "Terminals"
 set $ws2 "Chromium"
 set $ws3 "Code"
-set $ws4 "4"
+set $ws4 "PDFs"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
