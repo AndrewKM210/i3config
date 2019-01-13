@@ -6,7 +6,7 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
-PS1='[\u@\h \W]\$ '
+PS1='\[\e[1m\][\u@\h \W]\$\[\e[0m\] '
 
 # Extras for Android Studio
 export ANDROID_HOME=/home/andrew/Android/Sdk
