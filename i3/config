@@ -95,10 +95,10 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "Terminals"
-set $ws2 "Chromium"
-set $ws3 "Code"
-set $ws4 "PDFs"
+set $ws1 "1:Terminals"
+set $ws2 "2:Chromium"
+set $ws3 "3:Code"
+set $ws4 "4:PDFs"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
@@ -190,11 +190,11 @@ client.placeholder	        $background    #282D37    $background  $background
 exec "setxkbmap -layout es"# Change default keyboarexec "setxkbmap -layout es"# Change default keyboarexec "setxkbmap -layout es"# Change default keyboarexec "setxkbmap -layout es"
 
 # Set wallpaper and lock on start
-exec_always betterlockscreen -u ~/Wallpapers/wallpaper.png
-exec_always betterlockscreen -w
+exec_always betterlockscreen -u ~/wallpapers/wallpaper5.png -r 1366x768 &
+exec_always betterlockscreen -w &
 
 # Execute compton on start
-exec_always compton
+exec_always compton &
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
@@ -212,10 +212,10 @@ bindsym XF86MonBrightnessUp exec light -A -b 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec light -U -b 10 # decrease screen brightness
 
 # Execute polybar on start
-exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id ~/.config/polybar/launch.sh &
 
 # Get terminal theme on start
-exec_always xrdb ~/.Xresources
+exec_always xrdb ~/.Xresources &
 
 # No window titlebar
 for_window [class="^.*"] border pixel 1
