@@ -15,5 +15,5 @@ export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
 
 # Alias
 alias android-studio='bash /opt/android-studio/bin/studio.sh'
-alias night-mode='redshift -P -O 2500'
-alias day-mode='redshift -x'
+alias night-mode='redshift -P -O 2500 &> /dev/null'
+alias day-mode='redshift -x &> /dev/null'
