@@ -190,7 +190,7 @@ client.placeholder	        $background    #282D37    $background  $background
 exec "setxkbmap -layout es"# Change default keyboarexec "setxkbmap -layout es"# Change default keyboarexec "setxkbmap -layout es"# Change default keyboarexec "setxkbmap -layout es"
 
 # Set wallpaper and lock on start
-exec_always betterlockscreen -u ~/wallpapers/wallpaper5.png -r 1366x768 &
+exec_always betterlockscreen -u ~/wallpapers/wallpaper7.png -r 1366x768 &
 exec_always betterlockscreen -w &
 
 # Execute compton on start
